@@ -3,7 +3,7 @@ import test, { chromium, expect, webkit, type Browser, type Locator, type Page }
 (async () => {
     const browser: Browser = await chromium.launch({ headless: false, channel: 'chrome' });
     const page: Page = await browser.newPage();
-    await page.goto('https://qagecmsus.globalindustrial.net/account/login');
+    await page.goto('https://google.com');
     await page.getByRole('textbox', { name: 'abc@example.com' }).fill('ANashte@globalindustrial.com');
     await page.locator('#password').fill('Newuser1@');
     await page.getByRole('button', { name: 'Sign In' }).click();

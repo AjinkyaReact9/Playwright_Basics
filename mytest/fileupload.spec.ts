@@ -5,7 +5,6 @@ test('file upload', async () => {
     const page: Page = await browser.newPage();
 
     // await page.goto('https://cgi-lib.berkeley.edu/ex/fup.html');
-    await page.goto('https://qagecmsus.globalindustrial.net/');
 
 
     // await page.locator("input[name='upfile']").setInputFiles("C:/Users/ANashte/Downloads/image.png");

@@ -7,7 +7,7 @@ test('type characters sequentially', async () => {
     const page: Page = await browser.newPage();
 
     // await page.goto('https://www.flipkart.com/');
-    await page.goto("https://qagecmsus.globalindustrial.net/");
+    await page.goto("https://google.com");
 
     // await page.getByRole('button', { name: '✕' }).click();
     // await page.getByRole('textbox', { name: 'Search for Products, Brands' }).pressSequentially("macbook", {delay: 500});

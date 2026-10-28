@@ -9,7 +9,7 @@ test.use({
 test('login', async () => {
     const browser: Browser = await webkit.launch({ headless: false });
     const page: Page = await browser.newPage();
-    await page.goto('https://qagecmsus.globalindustrial.net/');
+    await page.goto('https://google.com');
 
     const dropdown: Locator = await page.getByText('Sign in/Register');
     await dropdown.click();
@@ -47,7 +47,7 @@ test('multiple logins', async () => {
     const page2: Page = await browserContext_2.newPage();
 
     //browser1:
-    await page1.goto('https://qagecmsus.globalindustrial.net/');
+    await page1.goto('https://google.com');
     const dropdown_1: Locator = await page1.getByText('Sign in/Register');
     await dropdown_1.click();
     const signInBtn_1: Locator = await page1.getByRole('button', { name: 'Sign in' });
@@ -63,7 +63,7 @@ test('multiple logins', async () => {
     await loginBtn_1.click();
 
     //browser2:
-    await page2.goto('https://qagecmsus.globalindustrial.net/');
+    await page2.goto('https://google.com');
     const dropdown_2: Locator = await page2.getByText('Sign in/Register');
     await dropdown_2.click();
     const signInBtn_2: Locator = await page2.getByRole('button', { name: 'Sign in' });
@@ -139,7 +139,7 @@ test('auth test', async ()=> {
    const authHeader = 'Basic ' + btoa(username+':'+password); 
    page.setExtraHTTPHeaders({Authorization: authHeader});
 
-   await page.goto('https://qagecmsus.globalindustrial.net/');
+   await page.goto('https://google.com');
 
    await new Promise(() => {}); //pervents your script from exiting;
 });
@@ -197,7 +197,7 @@ test('Select mouseHover test', async ()=> {
 //    const authHeader = 'Basic ' + btoa(username+':'+password); 
 //    page.setExtraHTTPHeaders({Authorization: authHeader});
 
-   await page.goto('https://qagecmsus.globalindustrial.net/');
+   await page.goto('https://google.com');
 
     await page.getByText('SHOP ALL CATEGORIES').click();
     const P1 : Locator = page.locator('#nav-menu-modal').getByText('Janitorial & Facility')
@@ -230,7 +230,7 @@ test('primaryCategory test', async ()=> {
 //    const authHeader = 'Basic ' + btoa(username+':'+password); 
 //    page.setExtraHTTPHeaders({Authorization: authHeader});
 
-   await page.goto('https://qagecmsus.globalindustrial.net/');
+   await page.goto('https://google.com');
 
     await page.getByText('SHOP ALL CATEGORIES').click();
     // li.list-menu > span.active-category-tag > span.category-desc
